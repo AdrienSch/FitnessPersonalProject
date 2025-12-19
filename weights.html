@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Web Dev Practice: Weight Training</title>
+        <style>
+            table {
+                width: 80%;
+                border-collapse: collapse;
+                margin: 20px auto;
+            }
+
+            th, td {
+                border: 1px solid #333;
+                padding: 10px;
+                text-align: center;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+            
+            .form-container {
+                width: 80%;
+                margin: 20px auto;
+                text-align: center;
+            }
+            
+            input {
+                margin: 5px;
+                padding: 8px;
+            }
+            
+            button {
+                padding: 8px 12px;
+                margin-top: 10px;
+            }   
+        </style>
+        <meta charset="utf-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1">
+        <!--
+        <link rel="stylesheet", href="style.css" />
+        -->
+        <script src="weightsScript.js" defer></script>
+    </head>
+    <body>
+        <h2 style="text-align:center;">Exercise Information</h2>
+
+        <div class="form-container">
+            <form id="exercise-form">
+                <input type="text" id="exerciseName" placeholder="Exercise Name" required />
+                <input type="number" id="numReps" placeholder="Number of Reps" required />
+                <input type="number" id="totalWeight" placeholder="Total Weight (Lbs.)" required />
+                <input type="number" id="numSets" placeholder="How Many Sets" required />
+                <br>
+                <button type="button" id="addBtn">Add Exercise</button>
+            </form>
+        </div>
+
+        <table id="exerciseTable">
+            <thead>
+                <tr>
+                    <th>Exercise</th>
+                    <th>Number of Reps</th>
+                    <th>Total Weight</th>
+                    <th>How Many Sets</th>
+                    <th>Rep Maximum (Calculated)</th>
+                    <th>User Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--
+                <tr>
+                    <td>Dumbbell Curls</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>3</td>
+                    <td>300</td>
+                    <td><button onclick="editRow(this)">Edit</button></td>
+                </tr>
+                <tr>
+                    <td>Bench Press</td>
+                    <td>10</td>
+                    <td>25</td>
+                    <td>3</td>
+                    <td>750</td>
+                    <td><button onclick="editRow(this)">Edit</button></td>
+                </tr>
+                -->
+            </tbody>
+        </table>
+
+    </body>
+
+</html>

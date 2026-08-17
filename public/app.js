@@ -43,3 +43,23 @@ function addExercise() {
 }
 
 document.getElementById('addExercise').addEventListener('click', addExercise);
+
+// "GET" and "POST" Example
+const nameExample = document.getElementById('nameExample');
+const buttonExample = document.getElementById('buttonExample');
+const resultExample = document.getElementById('resultExample');
+
+buttonExample.addEventListener('click', async () => {
+    const name = nameExample.value;
+
+    const response = await fetch('/api/example', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ name })
+    });
+
+    const data = await response.json();
+    resultExample.textContent = `Server Response: ${data.message}`;
+});

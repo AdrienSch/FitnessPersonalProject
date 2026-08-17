@@ -144,3 +144,4 @@ vite.config.ts.timestamp-*
 .db-wal
 .db-shm
 node_modules
+data/

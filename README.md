@@ -13,3 +13,4 @@ SQLite
 3. Run the commands "npm install express" and "npm install better-sqlite3" in terminal to add the dependencies to "package.json".
 4. Within the "project" directory, import the dependencies to the "server.js" file. Create 2 variables that references Express.js and assigns a hardcoded port number to connect to once a user starts up the web server.
 5. In the terminal (or command-line interface), type the command "node server.js" while in the "project" directory to launch the server on localhost with the assigned port number! To shut down the web server, hit "CTRL + C" on your keyboard inside of the terminal.
+6. To store the database in the right path, create a subdirectory named "data" within the "project" directory.
